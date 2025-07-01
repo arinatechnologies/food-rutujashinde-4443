@@ -1,9 +1,8 @@
-{
-  "images": [
-    "modern restaurant interior with tables",
-    "chef preparing food in kitchen",
-    "close-up of gourmet dish",
-    "restaurant exterior with signage",
-    "happy customers dining together"
-  ]
-}
+[
+  "restaurant location exterior",
+  "phone on wooden table",
+  "email icon on paper",
+  "restaurant open sign",
+  "chef preparing food",
+  "restaurant dining area"
+]
