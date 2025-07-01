@@ -1,8 +1,12 @@
-[
-  "tea leaves closeup",
-  "tea ceremony preparation",
-  "tea plantation aerial view",
-  "team meeting in tea shop",
-  "hands holding teacup",
-  "variety of tea blends"
-]
+document.addEventListener('DOMContentLoaded', function() {
+    // Mobile navigation toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    }
+});
