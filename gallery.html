@@ -9,15 +9,15 @@
             </head>
             <body>
             <header class="site-header">
-  <div class="header-container">
+  <div class="container">
     <a href="index.html" class="logo">TeaChai</a>
     
     <button class="menu-toggle" aria-label="Toggle navigation">
       <span class="hamburger"></span>
     </button>
     
-    <nav class="main-nav">
-      <ul class="nav-menu">
+    <nav class="nav-menu">
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
@@ -32,12 +32,12 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <h1 class="hero-title">Culinary Showcase</h1>
-      <p class="hero-subtitle">Explore our portfolio of exquisite food creations crafted with passion and precision</p>
+      <h1>Our Culinary Portfolio</h1>
+      <p class="subhead">Where artistry meets flavor in every creation</p>
     </div>
   </section>
 
-  <!-- Filter Buttons -->
+  <!-- Gallery Filter -->
   <section class="gallery-controls">
     <div class="filter-buttons">
       <button class="filter-btn active" data-filter="all">All</button>
@@ -49,125 +49,124 @@
     </div>
   </section>
 
-  <!-- Gallery Grid -->
+  <!-- Masonry Grid -->
   <section class="gallery-grid">
-    <div class="gallery-item" data-category="plating">
-      <a href="#" class="gallery-link" data-modal="modal1">
-        <img src="images/gallery1.jpg" alt="Modern plating technique with edible flowers" loading="lazy">
-        <div class="gallery-overlay">
-          <h3>Spring Garden</h3>
-          <p>Vegetable terrine with herb emulsion</p>
+    <div class="grid-item" data-category="plating">
+      <a href="#modal-1" class="gallery-link">
+        <img src="images/gallery1.jpg" alt="Modern plating technique">
+        <div class="image-overlay">
+          <h3>Zen Garden Plate</h3>
+          <p>Japanese-inspired minimalist presentation</p>
         </div>
       </a>
     </div>
     
-    <div class="gallery-item" data-category="pastry">
-      <a href="#" class="gallery-link" data-modal="modal2">
-        <img src="images/gallery2.jpg" alt="Chocolate dessert with gold leaf" loading="lazy">
-        <div class="gallery-overlay">
-          <h3>Golden Symphony</h3>
-          <p>Dark chocolate mousse with raspberry coulis</p>
+    <div class="grid-item" data-category="pastry">
+      <a href="#modal-2" class="gallery-link">
+        <img src="images/gallery2.jpg" alt="Chocolate pastry">
+        <div class="image-overlay">
+          <h3>Chocolate Symphony</h3>
+          <p>Five-texture chocolate dessert</p>
         </div>
       </a>
     </div>
     
-    <!-- 10 more gallery items with different categories -->
-    <div class="gallery-item" data-category="fusion">
-      <a href="#" class="gallery-link" data-modal="modal3">
-        <img src="images/gallery3.jpg" alt="East-meets-West dish" loading="lazy">
-        <div class="gallery-overlay">
-          <h3>Harmony Bowl</h3>
-          <p>Miso-glazed salmon with quinoa tabbouleh</p>
+    <div class="grid-item" data-category="fusion">
+      <a href="#modal-3" class="gallery-link">
+        <img src="images/gallery3.jpg" alt="Fusion dish">
+        <div class="image-overlay">
+          <h3>East Meets West</h3>
+          <p>Duck confit with Asian spices</p>
         </div>
       </a>
     </div>
     
-    <div class="gallery-item" data-category="seasonal">
-      <a href="#" class="gallery-link" data-modal="modal4">
-        <img src="images/gallery4.jpg" alt="Autumn-inspired dish" loading="lazy">
-        <div class="gallery-overlay">
-          <h3>Harvest Moon</h3>
-          <p>Pumpkin ravioli with brown butter sage</p>
+    <div class="grid-item" data-category="seasonal">
+      <a href="#modal-4" class="gallery-link">
+        <img src="images/gallery4.jpg" alt="Seasonal dish">
+        <div class="image-overlay">
+          <h3>Autumn Harvest</h3>
+          <p>Root vegetables with truffle essence</p>
         </div>
       </a>
     </div>
     
-    <div class="gallery-item" data-category="beverages">
-      <a href="#" class="gallery-link" data-modal="modal5">
-        <img src="images/gallery5.jpg" alt="Crafted cocktail" loading="lazy">
-        <div class="gallery-overlay">
-          <h3>TeaChai Twilight</h3>
-          <p>Signature spiced tea cocktail</p>
+    <div class="grid-item" data-category="beverages">
+      <a href="#modal-5" class="gallery-link">
+        <img src="images/gallery5.jpg" alt="Cocktail">
+        <div class="image-overlay">
+          <h3>TeaChai Signature</h3>
+          <p>Our house specialty cocktail</p>
         </div>
       </a>
     </div>
     
-    <div class="gallery-item" data-category="plating">
-      <a href="#" class="gallery-link" data-modal="modal6">
-        <img src="images/gallery6.jpg" alt="Minimalist seafood dish" loading="lazy">
-        <div class="gallery-overlay">
-          <h3>Ocean's Essence</h3>
-          <p>Scallop crudo with yuzu foam</p>
+    <div class="grid-item" data-category="plating">
+      <a href="#modal-6" class="gallery-link">
+        <img src="images/gallery6.jpg" alt="Modern plating">
+        <div class="image-overlay">
+          <h3>Oceanic Canvas</h3>
+          <p>Seafood composition with edible sand</p>
         </div>
       </a>
     </div>
     
-    <div class="gallery-item" data-category="pastry">
-      <a href="#" class="gallery-link" data-modal="modal7">
-        <img src="images/gallery7.jpg" alt="Modern tart presentation" loading="lazy">
-        <div class="gallery-overlay">
-          <h3>Berry Geometry</h3>
-          <p>Mixed berry tart with vanilla cream</p>
+    <div class="grid-item" data-category="pastry">
+      <a href="#modal-7" class="gallery-link">
+        <img src="images/gallery7.jpg" alt="Pastry">
+        <div class="image-overlay">
+          <h3>Berry Cloud</h3>
+          <p>Deconstructed cheesecake</p>
         </div>
       </a>
     </div>
     
-    <div class="gallery-item" data-category="fusion">
-      <a href="#" class="gallery-link" data-modal="modal8">
-        <img src="images/gallery8.jpg" alt="Innovative sushi creation" loading="lazy">
-        <div class="gallery-overlay">
-          <h3>Tokyo-Mex</h3>
-          <p>Tuna tostada with wasabi crema</p>
+    <div class="grid-item" data-category="fusion">
+      <a href="#modal-8" class="gallery-link">
+        <img src="images/gallery8.jpg" alt="Fusion dish">
+        <div class="image-overlay">
+          <h3>Spice Route</h3>
+          <p>Middle Eastern-Asian fusion</p>
         </div>
       </a>
     </div>
     
-    <div class="gallery-item" data-category="seasonal">
-      <a href="#" class="gallery-link" data-modal="modal9">
-        <img src="images/gallery9.jpg" alt="Summer salad composition" loading="lazy">
-        <div class="gallery-overlay">
-          <h3>Sunshine Salad</h3>
-          <p>Heirloom tomatoes with burrata</p>
+    <div class="grid-item" data-category="seasonal">
+      <a href="#modal-9" class="gallery-link">
+        <img src="images/gallery9.jpg" alt="Seasonal dish">
+        <div class="image-overlay">
+          <h3>Spring Awakening</h3>
+          <p>Foraged ingredients composition</p>
         </div>
       </a>
     </div>
     
-    <div class="gallery-item" data-category="beverages">
-      <a href="#" class="gallery-link" data-modal="modal10">
-        <img src="images/gallery10.jpg" alt="Artisanal coffee presentation" loading="lazy">
-        <div class="gallery-overlay">
-          <h3>Mocha Art</h3>
-          <p>Latte with intricate cocoa design</p>
+    <div class="grid-item" data-category="beverages">
+      <a href="#modal-10" class="gallery-link">
+        <img src="images/gallery10.jpg" alt="Beverage">
+        <div class="image-overlay">
+          <h3>Cold Brew Elixir</h3>
+          <p>House specialty coffee blend</p>
         </div>
       </a>
     </div>
     
-    <div class="gallery-item" data-category="plating">
-      <a href="#" class="gallery-link" data-modal="modal11">
-        <img src="images/gallery11.jpg" alt="Deconstructed dessert" loading="lazy">
-        <div class="gallery-overlay">
-          <h3>Deconstructed Opera</h3>
-          <p>Modern interpretation of classic French dessert</p>
+    <div class="grid-item" data-category="plating">
+      <a href="#modal-11" class="gallery-link">
+        <img src="images/gallery11.jpg" alt="Plating">
+        <div class="image-overlay">
+          <h3>Geometric Balance</h3>
+          <p>Modernist cuisine presentation</p>
         </div>
       </a>
     </div>
     
-    <div class="gallery-item" data-category="pastry">
-      <a href="#" class="gallery-link" data-modal="modal12">
-        <img src="images/gallery12.jpg" alt="Macaron tower" loading="lazy">
-        <div class="gallery-overlay">
-          <h3>Macaron Symphony</h3>
-          <p>Assorted flavors with edible gold</p>
+    <div class="grid-item" data-category="pastry">
+      <a href="#modal-12" class="gallery-link">
+        <img src="images/gallery12.jpg" alt="Pastry">
+        <div class="image-overlay">
+          <h3>Chocolate Architecture</h3>
+          <p>Structural dessert engineering</p>
         </div>
       </a>
     </div>
@@ -178,87 +177,66 @@
     <button class="load-more-btn">Load More</button>
   </div>
 
-  <!-- Testimonials Section -->
+  <!-- Testimonials -->
   <section class="testimonials">
-    <h2 class="section-title">Client Experiences</h2>
-    <div class="testimonial-grid">
+    <h2>Trusted by Culinary Innovators</h2>
+    <div class="client-logos">
+      <i class="ph ph-chef-hat"></i>
+      <i class="ph ph-wine"></i>
+      <i class="ph ph-coffee"></i>
+      <i class="ph ph-leaf"></i>
+    </div>
+    <div class="testimonial-cards">
       <div class="testimonial-card">
-        <div class="testimonial-content">
-          <p>"TeaChai's culinary team transformed our event with their innovative canapés and impeccable presentation."</p>
-        </div>
-        <div class="client-info">
-          <span class="ph ph-buildings"></span>
-          <h4>Luminary Events</h4>
-        </div>
+        <p>"TeaChai transformed our restaurant's dessert menu into an art exhibition."</p>
+        <p class="client-name">— Executive Chef, Michelin Star Restaurant</p>
       </div>
-      
       <div class="testimonial-card">
-        <div class="testimonial-content">
-          <p>"The pastry workshop elevated our team's skills beyond expectations. Truly masterful instruction."</p>
-        </div>
-        <div class="client-info">
-          <span class="ph ph-hotel"></span>
-          <h4>The Grand Hotel</h4>
-        </div>
-      </div>
-      
-      <div class="testimonial-card">
-        <div class="testimonial-content">
-          <p>"Our seasonal menu redesign brought 30% more customers. The fusion concepts were brilliant."</p>
-        </div>
-        <div class="client-info">
-          <span class="ph ph-cooking-pot"></span>
-          <h4>Bistro Moderne</h4>
-        </div>
+        <p>"The beverage program they designed doubled our bar revenue in three months."</p>
+        <p class="client-name">— Owner, Craft Cocktail Bar</p>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
   <section class="cta-section">
-    <div class="cta-content">
-      <h2 class="cta-title">Ready to elevate your culinary experience?</h2>
-      <p class="cta-subtitle">Contact us to discuss custom menus, private events, or consulting services.</p>
-      <div class="cta-buttons">
-        <a href="#" class="cta-btn primary">Get in Touch</a>
-        <a href="#" class="cta-btn secondary">View Services</a>
-      </div>
+    <h2>Ready to Elevate Your Culinary Vision?</h2>
+    <p>Let's collaborate to create something extraordinary.</p>
+    <div class="cta-buttons">
+      <a href="#" class="btn btn-primary">Book a Consultation</a>
+      <a href="#" class="btn btn-secondary">View Full Menu</a>
     </div>
   </section>
 
-  <!-- Modal Structure -->
-  <div class="modal" id="imageModal">
+  <!-- Modals (Hidden) -->
+  <div id="modal-1" class="modal">
     <div class="modal-content">
       <span class="close-modal">&times;</span>
-      <img class="modal-image" src="" alt="">
-      <div class="modal-details">
-        <h3 class="modal-title"></h3>
-        <p class="modal-description"></p>
-        <div class="modal-meta">
-          <span class="modal-category"></span>
-          <span class="modal-date"></span>
-        </div>
+      <img src="images/gallery1.jpg" alt="Zen Garden Plate">
+      <div class="modal-text">
+        <h3>Zen Garden Plate</h3>
+        <p>This Japanese-inspired minimalist presentation features carefully arranged sashimi on a bed of edible "sand" made from crushed nori and sesame seeds, with delicate vegetable garnishes representing traditional garden elements.</p>
+        <p><strong>Techniques:</strong> Knife skills, precision plating, temperature control</p>
       </div>
     </div>
   </div>
 </main>
 
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/gallery.css">
+<script src="js/base.js"></script>
+<script src="js/gallery.js"></script>
+
             <footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-logo">TeaChai</div>
-    
-    <div class="footer-links">
-      <div class="footer-column">
-        <h3>Company</h3>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">TeaChai</a>
+        <p class="tagline">Premium tea experiences</p>
       </div>
       
-      <div class="footer-column">
-        <h3>Connect</h3>
+      <div class="footer-social">
+        <h3 class="footer-heading">Connect</h3>
         <ul class="social-links">
           <li><a href="#" aria-label="Facebook">Facebook</a></li>
           <li><a href="#" aria-label="Instagram">Instagram</a></li>
@@ -266,10 +244,19 @@
           <li><a href="#" aria-label="Twitter">Twitter</a></li>
         </ul>
       </div>
+      
+      <div class="footer-contact">
+        <h3 class="footer-heading">Contact</h3>
+        <address>
+          <p>123 Tea Street</p>
+          <p>Beverage City, TC 10001</p>
+          <p><a href="mailto:hello@teachai.com">hello@teachai.com</a></p>
+        </address>
+      </div>
     </div>
     
-    <div class="footer-bottom">
-      <p>&copy; <span id="year"></span> TeaChai. All rights reserved.</p>
+    <div class="footer-legal">
+      <p class="copyright">&copy; <span id="year"></span> TeaChai. All rights reserved.</p>
     </div>
   </div>
 </footer>
