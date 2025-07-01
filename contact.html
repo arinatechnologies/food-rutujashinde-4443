@@ -9,15 +9,15 @@
             </head>
             <body>
             <header class="site-header">
-  <div class="header-container">
+  <div class="container">
     <a href="index.html" class="logo">TeaChai</a>
     
     <button class="menu-toggle" aria-label="Toggle navigation">
       <span class="hamburger"></span>
     </button>
     
-    <nav class="main-nav">
-      <ul class="nav-menu">
+    <nav class="nav-menu">
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
@@ -28,21 +28,24 @@
   </div>
 </header>
 
-            <main class="contact-container">
+            <main class="contact-page">
   <section class="contact-hero">
-    <h1>Get in Touch</h1>
-    <p class="subheading">We'd love to hear from you about your catering needs or restaurant inquiries.</p>
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p class="subhead">We'd love to hear from you. Contact our team or visit us in person.</p>
+    </div>
   </section>
 
-  <div class="contact-content">
-    <div class="contact-form-container">
+  <div class="contact-container container">
+    <div class="contact-column contact-form-col">
+      <h2>Send us a message</h2>
       <form id="customForm" data-form-handler="" class="contact-form">
         <div class="form-group">
-          <label for="name">Name*</label>
+          <label for="name">Name <span class="required">*</span></label>
           <input type="text" id="name" name="name" required>
         </div>
         <div class="form-group">
-          <label for="email">Email*</label>
+          <label for="email">Email <span class="required">*</span></label>
           <input type="email" id="email" name="email" required>
         </div>
         <div class="form-group">
@@ -50,12 +53,12 @@
           <input type="tel" id="phone" name="phone">
         </div>
         <div class="form-group">
-          <label for="service">Service Needed</label>
+          <label for="service">Service</label>
           <select id="service" name="service">
             <option value="">Select a service</option>
             <option value="catering">Catering</option>
-            <option value="reservation">Reservation</option>
-            <option value="private-event">Private Event</option>
+            <option value="events">Private Events</option>
+            <option value="reservations">Reservations</option>
             <option value="feedback">Feedback</option>
             <option value="other">Other</option>
           </select>
@@ -64,48 +67,66 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5"></textarea>
         </div>
-        <button type="submit" class="btn-submit">Submit</button>
+        <button type="submit" class="btn-submit">Send Message</button>
       </form>
     </div>
 
-    <div class="contact-info-container">
+    <div class="contact-column contact-info-col">
+      <h2>Contact Information</h2>
       <div class="contact-card">
-        <h3>Address</h3>
-        <p>123 Culinary Street<br>Foodie District<br>New York, NY 10001</p>
+        <div class="contact-icon">
+          <img src="images/contact1.jpg" alt="Location icon" width="40" height="40">
+        </div>
+        <div class="contact-details">
+          <h3>Address</h3>
+          <p>123 Culinary Street<br>Foodie District, NY 10001</p>
+        </div>
       </div>
+      
       <div class="contact-card">
-        <h3>Phone</h3>
-        <p><a href="tel:+12125551234">(212) 555-1234</a></p>
+        <div class="contact-icon">
+          <img src="images/contact2.jpg" alt="Phone icon" width="40" height="40">
+        </div>
+        <div class="contact-details">
+          <h3>Phone</h3>
+          <p><a href="tel:+11234567890">+1 (123) 456-7890</a></p>
+        </div>
       </div>
+      
       <div class="contact-card">
-        <h3>Email</h3>
-        <p><a href="mailto:info@teachai.com">info@teachai.com</a></p>
+        <div class="contact-icon">
+          <img src="images/contact3.jpg" alt="Email icon" width="40" height="40">
+        </div>
+        <div class="contact-details">
+          <h3>Email</h3>
+          <p><a href="mailto:info@teachai.com">info@teachai.com</a></p>
+        </div>
       </div>
+      
       <div class="contact-card">
-        <h3>Operating Hours</h3>
-        <p>Monday - Friday: 9am - 9pm<br>
-        Saturday - Sunday: 10am - 10pm</p>
+        <div class="contact-icon">
+          <img src="images/contact4.jpg" alt="Hours icon" width="40" height="40">
+        </div>
+        <div class="contact-details">
+          <h3>Operating Hours</h3>
+          <p>Monday - Friday: 9am - 9pm<br>
+          Saturday - Sunday: 10am - 10pm</p>
+        </div>
       </div>
     </div>
   </div>
 </main>
 
             <footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-logo">TeaChai</div>
-    
-    <div class="footer-links">
-      <div class="footer-column">
-        <h3>Company</h3>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">TeaChai</a>
+        <p class="tagline">Premium tea experiences</p>
       </div>
       
-      <div class="footer-column">
-        <h3>Connect</h3>
+      <div class="footer-social">
+        <h3 class="footer-heading">Connect</h3>
         <ul class="social-links">
           <li><a href="#" aria-label="Facebook">Facebook</a></li>
           <li><a href="#" aria-label="Instagram">Instagram</a></li>
@@ -113,10 +134,19 @@
           <li><a href="#" aria-label="Twitter">Twitter</a></li>
         </ul>
       </div>
+      
+      <div class="footer-contact">
+        <h3 class="footer-heading">Contact</h3>
+        <address>
+          <p>123 Tea Street</p>
+          <p>Beverage City, TC 10001</p>
+          <p><a href="mailto:hello@teachai.com">hello@teachai.com</a></p>
+        </address>
+      </div>
     </div>
     
-    <div class="footer-bottom">
-      <p>&copy; <span id="year"></span> TeaChai. All rights reserved.</p>
+    <div class="footer-legal">
+      <p class="copyright">&copy; <span id="year"></span> TeaChai. All rights reserved.</p>
     </div>
   </div>
 </footer>
